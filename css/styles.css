@@ -64,9 +64,10 @@ input,select,textarea{font-family:inherit; font-size:16px;}
 h1,h2,h3,h4{
   font-family:var(--font-display);
   color:var(--slate-900);
-  font-weight:700;
+  font-weight:400;
   line-height:1.15;
   margin:0 0 .4em;
+  letter-spacing:-.015em;
 }
 
 .kicker{
