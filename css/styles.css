@@ -26,7 +26,7 @@
   --slate-400:#8697b0;
   --line:#dde6f2;
 
-  --font-display:'Poppins', sans-serif;
+  --font-display:'Oswald', sans-serif;
   --font-body:'Inter', sans-serif;
 
   --container:1240px;
@@ -596,7 +596,7 @@ h1,h2,h3,h4{
   padding:0 24px;
   text-align:center;
 }
-.ba-head h3{font-size:clamp(1.6rem, 1.3rem + 1vw, 2.1rem);}
+.ba-head h3{font-size:clamp(1.6rem, 1.3rem + 1vw, 2.1rem); text-transform:uppercase;}
 .ba-grid{
   max-width:var(--container);
   margin:0 auto;
