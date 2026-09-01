@@ -568,19 +568,6 @@ h1,h2,h3,h4{
   box-shadow:var(--shadow-md);
 }
 .reel-card__frame video{width:100%; height:100%; object-fit:cover;}
-.reel-card__sound{
-  position:absolute; right:10px; bottom:10px;
-  width:36px; height:36px;
-  border-radius:50%;
-  background:rgba(6,15,30,.6);
-  backdrop-filter:blur(4px);
-  border:1px solid rgba(255,255,255,.3);
-  display:flex; align-items:center; justify-content:center;
-  color:#fff;
-}
-.reel-card__sound .icon-mute{width:18px; height:18px;}
-.reel-card__sound .mute-slash{opacity:1; transition:opacity .15s;}
-.reel-card__sound[data-muted="false"] .mute-slash{opacity:0;}
 .reel-card__caption{
   margin:.7em 2px 0;
   font-size:.85rem;

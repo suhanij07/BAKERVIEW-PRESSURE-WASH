@@ -95,24 +95,6 @@
     lazyVideos.forEach(v => { v.src = v.dataset.src; });
   }
 
-  /* ---------- Reel card tap-to-toggle sound ---------- */
-  document.querySelectorAll('.reel-card__sound').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const video = btn.closest('.reel-card__frame').querySelector('video');
-      if (!video) return;
-      video.muted = !video.muted;
-      btn.dataset.muted = String(video.muted);
-      if (!video.muted) {
-        document.querySelectorAll('.reel-card__frame video').forEach(v => {
-          if (v !== video) v.muted = true;
-        });
-        document.querySelectorAll('.reel-card__sound').forEach(b => {
-          if (b !== btn) b.dataset.muted = 'true';
-        });
-      }
-    });
-  });
-
   /* ---------- Hero slideshow ---------- */
   const heroSlides = document.querySelectorAll('.hero__slide');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
