@@ -599,14 +599,14 @@ h1,h2,h3,h4{
    ========================================================================== */
 .ba-head{
   max-width:var(--container);
-  margin:0 auto 2rem;
+  margin:4.5rem auto 2rem;
   padding:0 24px;
   text-align:center;
 }
 .ba-head h3{font-size:clamp(1.6rem, 1.3rem + 1vw, 2.1rem);}
 .ba-grid{
   max-width:var(--container);
-  margin:0 auto 4.5rem;
+  margin:0 auto;
   padding:0 24px;
   display:grid;
   grid-template-columns:repeat(3, 1fr);
