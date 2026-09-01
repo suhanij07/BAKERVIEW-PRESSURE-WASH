@@ -95,16 +95,12 @@
     lazyVideos.forEach(v => { v.src = v.dataset.src; });
   }
 
-  /* ---------- Hero slideshow ---------- */
-  const heroSlides = document.querySelectorAll('.hero__slide');
+  /* ---------- Hero video ---------- */
+  const heroVideo = document.querySelector('.hero__video');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (heroSlides.length > 1 && !reduceMotion) {
-    let heroIndex = 0;
-    setInterval(() => {
-      heroSlides[heroIndex].classList.remove('is-active');
-      heroIndex = (heroIndex + 1) % heroSlides.length;
-      heroSlides[heroIndex].classList.add('is-active');
-    }, 5000);
+  if (heroVideo && reduceMotion) {
+    heroVideo.pause();
+    heroVideo.removeAttribute('autoplay');
   }
 
   /* ---------- Before & after sliders ---------- */
